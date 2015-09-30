@@ -16,10 +16,13 @@ public class Práctica1 {
 
     public static void main(String[] args) {
         // TODO code application logic here
-         int[] v1 = {1,1,1,1,4,4,2,2,2,101,-4};
-        // HashMap hm <Integer, Integer> = new HashMap();
+         Integer[] v1 = {1,1,1,1,4,4,2,2,2,101,-4};
+         String[] v2 = {"Victor", "Juan", "Juan","Pedro","Victor"};
          Histograma h = new Histograma(v1);
+         Histograma h2 = new Histograma(v2);
          System.out.print(h.getHisto());
+         System.out.print(h2.getHisto());
+         
 
     }
 

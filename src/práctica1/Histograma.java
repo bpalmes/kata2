@@ -10,21 +10,21 @@ import java.util.HashMap;
  *
  * @author usuario
  */
-public class Histograma {
-    private final int v[];
+public class Histograma<T> {
+    private final T v[];
 
-    public Histograma(int[] v) {
+    public Histograma(T[] v) {
         this.v = v;
     }
 
-    public int[] getV() {
+    public T[] getV() {
         return v;
     }
-    public HashMap<Integer,Integer>  getHisto(){
-        HashMap <Integer,Integer> histo = new HashMap();
+    public HashMap<T,Integer>  getHisto(){
+        HashMap <T,Integer> histo = new HashMap();
         for(int i = 0; i < v.length; i++){
             if(histo.get(v[i])== null){
-               histo.put(v[i], 0);
+               histo.put(v[i], 1);
             }else{
                 histo.put(v[i],histo.get(v[i])+1);
             }
