@@ -19,7 +19,7 @@ public class Práctica1 {
          int[] v1 = {1,1,1,1,4,4,2,2,2,101,-4};
         // HashMap hm <Integer, Integer> = new HashMap();
          Histograma h = new Histograma(v1);
-         h.getHisto();
+         System.out.print(h.getHisto());
 
     }
 
